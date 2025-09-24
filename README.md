@@ -24,6 +24,7 @@ The database was built in **MySQL** as part of the *Foundation Database Module �
 
 ## 📂 Repository Structure  
 ├── ecommerce_schema.sql # Main database schema + sample data
+├── erd.png # ERD diagram
 ├── test_queries.sql # Sample queries to validate schema
 └── README.md # Documentation
 
@@ -93,6 +94,20 @@ JOIN order_items oi ON o.id = oi.order_id
 JOIN products p ON oi.product_id = p.id;
 ```
 
+---
+
+## 🧪 Test Queries
+The file [`test_queries.sql`](./test_queries.sql) contains queries that validate:
+- Table creation and relationships
+- Inserted sample data
+- Join queries (Orders with Users, Products with Categories, etc.)
+- Constraint testing (`CHECK` for valid ratings and non-negative product prices)
+
+Run them in MySQL Workbench with:
+```sql
+SOURCE test_queries.sql;
+```
+
 
 ## 🔒 Constraints & Integrity
 
@@ -106,6 +121,7 @@ Check Constraints → validate numeric ranges (price ≥ 0, rating 1–5)
 
 Cascade Rules → auto-delete related data
 
+
 ## 📊 Sample Data Included
 
 Users: Alice, Bob
@@ -118,6 +134,7 @@ Payments: linked to order
 
 Reviews: Alice reviewing a product
 
+
 ## 🚀 Future Improvements
 
 Add stored procedures for order placement.
@@ -125,6 +142,7 @@ Add stored procedures for order placement.
 Add triggers to auto-update stock.
 
 Expand with more data.
+
 
 ## 👤 Author
 

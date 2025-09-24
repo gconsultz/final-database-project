@@ -22,12 +22,14 @@ The database was built in **MySQL** as part of the *Foundation Database Module �
 
 ---
 
-## 📂 Repository Structure  
-├── ecommerce_schema.sql # Main database schema + sample data
-├── erd.png # ERD diagram
-├── test_queries.sql # Sample queries to validate schema
-└── README.md # Documentation
-
+## 📂 Repository Structure
+```text
+📦 ecommerce-db-project
+├── ecommerce_schema.sql   # Main database schema + sample data
+├── erd.png                # ERD diagram
+├── test_queries.sql       # Sample queries to validate schema
+└── README.md              # Documentation
+```
 
 ---
 
